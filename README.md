@@ -1,5 +1,5 @@
 # Market value of a footballer
-ML project about the market value of a football player. This is a Project for ML-zoomcamp course
+ML project about the market value of a football player. This is a Project for mlzoomcamp course by Datatalks ( https://datatalks.club/ )
 
 ![](images.jpg)
 
@@ -7,12 +7,12 @@ ML project about the market value of a football player. This is a Project for ML
 
 ## 1 - Problem description
 
-The football player market is an auction market in which teams buy and sell players to another team or as a free-agent. 
-There are two market session each year, dhatmay change between each league. More or less, in Europe, those periods are: 
-- From 01 July to 01 September
-- From 01 january to 31 January
-Players have training sessions and matches each week during the season, and they have a precise role in the club.
-Football players value depends on various parameters, like: player skill, potential, recent performance, contract duration, position and others to estimate an accurate transfer fee.
+The football player market is an auction market in which teams buy and sell players of another team or as a free agent. 
+There are two market session each year, that may change between each league. More or less, in Europe, those periods are: 
+- Summer session, from 01 July to 01 September
+- Winter session, from 01 january to 31 January
+Players have training sessions and matches each week during the season.
+Football players value depends on various parameters, like: player skill, potential, recent performance, residual contract duration, position and others. Everything matters to estimate an accurate transfer fee.
 
 ---
 ## 2 - The Goal
@@ -29,31 +29,30 @@ This dataset has gathered information on players competing in several top-tier g
 - 1 African league, namely the DStv Premiership in South Africa.
 - 4 Asian leagues, comprising J-League in Japan, Saudi Pro League in Saudi Arabia, K-League 1 in South Korea, and A-League in Australia.
 
-
-The data was obtained from this repository (https://www.kaggle.com/datasets/khanghunhnguyntrng/football-players-transfer-fee-prediction-dataset) that got data from trasnfermarket. 
+The data was obtained from this repository which processed the data from transfermarkt: https://www.kaggle.com/datasets/khanghunhnguyntrng/football-players-transfer-fee-prediction-dataset
 
 Important details about the data:
-- player: the link to the Transfermarkt page contains player data. Please add a prefix "www.transfermarkt.com/" to further navigating.
-- team: Name of the team that player played for at the time data was collected.
-- name: Name of player.
-- position: Position that player played most.
+- player: the link to the Transfermarkt page contains player data (you should add a prefix "www.transfermarkt.com/" to further navigating).
+- team: name of the team that player played for, at the time data was collected.
+- name: name of the player.
+- position: position where the player played most.
 - height: height of player, in cm unit.
-- age: age of player.
-- appearance: The number of times a player appear on field.
+- age: age of the player.
+- appearance: the number of times a player appear on field.
 - goals: goals scored.
 - assists: assits to goals.
 - yellow cards: number of yellow card.
-- second yellow cards: number of time player get 2 yellow card in 1 match.
+- second yellow cards: number of time the player got 2 yellow card in 1 match.
 - red cards: number of red card.
-- goals conceded: Gol took, only for a Goalkeeper.
-- clean sheets: only Goalkeeper.
+- goals conceded: gol took (only for a Goalkeeper, zero for the others).
+- clean sheets: number of match where the goalkeeper took 0 goals.
 - minutes played: number of minutes played during the monitor time.
 - days_injured: days he stayed injured.
 - games_injured: missed game for injuries.
 - award: total awarđ in whole career.
-- current_value: Valuated price, Euro unit.
-- highest_value: Highest valuated price in the past, Euro unit.
-- position_encoded: 0 galkeeper – 1, Defender – 2, midfield – 3, Attack - 4
+- current_value: valuated price, Euro unit.
+- highest_value: highest valuated price in the past, Euro unit.
+- position_encoded: 0: galkeeper – 1: Defender – 2: midfield – 3: Attack
 - winger: 1: winger, 0: not a winger.
 
 I uploaded the entire dataset to the repository. File: *player_data.csv* in the data directory.
@@ -139,7 +138,7 @@ P.S: The current values in test.py are taken from the dataset, raw number 149.
 ---
 
 #### Video of the service running :
-I loaded a small video where you can see how the web service works, everything it's in the 'Proof of working' folder
+I loaded a small video where you can see how the service works, everything it's in the 'Proof of working' folder.
 
-The video show the local web service starting in Docker and how it respond to the test.py
+The video show the local service starting in Docker and how it respond to the test.py
 I also attached the screenshot of the service running with flask and gunicorn.
