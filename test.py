@@ -38,4 +38,3 @@ response = requests.post(url, json=player).json()
 
 rx = np.expm1(response['curr_value'])
 print('The market value is: ', rx )
-#value expected: 6000000
