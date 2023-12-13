@@ -114,7 +114,9 @@ pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
 ```
 
 #### Docker
-There is also the file: *Dockerfile* in the repository, through this you can run the web service in a completely separate container :
+There is also the file: *Dockerfile* in the repository, through this you can run the service in a completely separate container. To run the Docker, be sure your docker service is running. If you are using wsl2 on Windows, to run the build command you need to make sure your docker dekstop is running, otherwise you will get an error. 
+For the docker, you have to:
+
 - From the project directory, create the docker image :
 ```
 docker build -t player_prediction .
