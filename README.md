@@ -88,12 +88,12 @@ After EDA, i decided to delete some columns based on the redundant value already
 - **gunicorn running.mp4**: video of the gunicorn built running and the prediction
 
 ---
-## 5 - Loading final model in web service:
+## 5 - Loading final model into a service:
 
 #### pipenv 
 
 The script *train.py* load the model : *player_model.bin* and it can run in a separate virtual environment across its dependency files *Pipenv* and *Pipenv.lock*.
-*flask* was used for the local web deployment in *train.py* script.
+*flask* was used for the local deployment in *train.py* script.
 
 - Install pipenv :
 ```
@@ -108,7 +108,7 @@ git clone https://github.com/bergimax/footballer-value/
 pipenv install
 ```
 - All the dependencies should be automatically soddisfied, just verify.
-- Run the web service using gunicorn inside the virtual environment:
+- Run the local service using gunicorn inside the virtual environment:
 ```
 pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
 ```
@@ -127,9 +127,9 @@ docker run -it --rm -p 9696:9696 player_prediction:latest
 ```
 The build command can take several minutes to run. Just give it time.
 
-#### Test the local web service:
+#### Test the local service:
 
-- To test the local web service, you can run the test script in another terminal:
+- To test the local service, you can run the test script in another terminal:
 ```
 python test.py
 ```
