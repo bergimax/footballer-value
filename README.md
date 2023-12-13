@@ -11,6 +11,7 @@ The football player market is an auction market in which teams buy and sell play
 There are two market session each year, that may change between each league. More or less, in Europe, those periods are: 
 - Summer session, from 01 July to 01 September
 - Winter session, from 01 january to 31 January
+  
 Players have training sessions and matches each week during the season.
 Football players value depends on various parameters, like: player skill, potential, recent performance, residual contract duration, position and others. Everything matters to estimate an accurate transfer fee.
 
