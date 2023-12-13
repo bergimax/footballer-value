@@ -101,7 +101,7 @@ pip install pipenv
 ```
 - Get a copy of project and dependencies, or clone the repository :
 ```
-git clone [git clone https://github.com/bergimax/footballer-value/]
+git clone https://github.com/bergimax/footballer-value/
 ```
 - From the project's folder, run :
 ``` 
