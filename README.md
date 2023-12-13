@@ -125,6 +125,7 @@ docker build -t player_prediction .
 ```
 docker run -it --rm -p 9696:9696 player_prediction:latest
 ```
+The build command can take several minutes to run. Just give it time.
 
 #### Test the local web service:
 
