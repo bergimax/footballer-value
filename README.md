@@ -69,15 +69,15 @@ After EDA, i decided to delete some columns based on the redundant value already
 ## 4 - Structure of the repository
 
 ### DATASET
-- **player_data.csv**: Contains the full dataset, it is in folder named 'data'
+- **player_data.csv**: contains the full dataset, it is in folder named 'data'
 
 ### Files
 - **Proj1.ipynb**: contains the notebook to explore the data and choose the model with the best results
 - **Pipfile and Pipfile.lock**: contains the dependencies to run the repo
-- **predict.py**: Contains the prediction using flask
-- **test.py**: Contains some values to test the model
-- **player_model.bin**: This is the model got from the train.py using Pickle
-- **train.py**: Contains the model with the best performance in the testing set, obtained using the notebook
+- **predict.py**: contains the prediction using flask
+- **test.py**: contains some values to test the model
+- **player_model.bin**: this is the model got from the train.py using Pickle
+- **train.py**: contains the model with the best performance in the testing set, obtained using the notebook
 - **Dockerfile**: contains the image for the docker
 
 ### Folder '**Proof of working**'
